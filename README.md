@@ -1,0 +1,2 @@
+# Straustrup
+Exercises from book
