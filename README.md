@@ -1,2 +1,2 @@
-# Straustrup
+# Stroustrup
 Exercises from book
