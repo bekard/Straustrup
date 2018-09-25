@@ -1,7 +1,7 @@
 #define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 #include "std_lib_facilities.h"
 int main()
-{   // Инициализация вектора
+{  
 	vector<string> numbers;
 	numbers.push_back("zero");
 	numbers.push_back("one");
@@ -21,7 +21,7 @@ int main()
 	cout << counter;
 	*/
 
-	// Инициализация переменных
+	// Г€Г­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»Гµ
 	int counter = 0;
 	string w_number = "";
 
