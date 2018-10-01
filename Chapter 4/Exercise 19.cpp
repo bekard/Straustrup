@@ -2,7 +2,7 @@
 #include "std_lib_facilities.h"
 // exercise 19.
 
-// the chek for the reiteration of names
+// chek for the reiteration of names
 bool error(vector<string> w) {
 	bool is_first = true;
 	sort(w.begin(), w.end());
@@ -23,13 +23,13 @@ int main() {
 	cout << "Now you need to fill vetors with values." << endl;
 	cout << "Please enter the name and score:" << endl;
 	
-	// enter values of names and sñores
+	// enter the values of names and scores
 	while (cin >> name >> score, (name != "NoName" && score != 0)) {
 		scores.push_back(score);
 		names.push_back(name);
 	}
 
-	// result output
+	// the result output
 	if (error(names)) {
 		cout << "Error, 2 identical names detected!" << endl;
 	}
