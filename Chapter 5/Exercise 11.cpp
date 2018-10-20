@@ -43,22 +43,6 @@ try
 		break;
 	}
 
-	/*
-	if (answer != 'Y' && answer != 'N') throw 1;
-
-
-	cout << "How many Fibonacci "
-		<< "numbers do you want to see?\n";
-	cin >> N;
-	if (N < 1) throw 2;
-
-	for (int a = 2; a < N; ++a)
-		FibNumbers.push_back(FibNumbers[a - 2] + FibNumbers[a - 1]);
-
-	for (int b = 0; b < N; ++b)
-		cout << b + 1 << ")\t" << FibNumbers[b] << endl;
-    */
-
 	keep_window_open();
 	return 0;
 	
