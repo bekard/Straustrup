@@ -6,7 +6,7 @@ exercise 10
 */
 
 /* Pseudocode
-input_values; // For example: 
+input_values; // For example:
 calculate;
 output_result;
 */
@@ -19,13 +19,10 @@ int get_factorial(int x) {
 }
 
 int permutation(int a, int b, char c) {
-	int result;
+	if (c != 'p' && c != 'c') error("Operation must be 'p' or 'c'");
+	if (b >= a || a < 1 || b < 1) error("Bad permutation sizes");
 
-	if (c != 'p' && c != 'c') error("Operation must be 'p' or 'c'!");
-	if (b >= a) error("First number must be more than second!");
-
-	result = get_factorial(a) / get_factorial(a - b);
-	return result;
+	return get_factorial(a) / get_factorial(a - b);
 }
 
 int combination(int a, int b, int p) {
@@ -42,14 +39,14 @@ try
 	cout << "Enter 2 numbers  and first letter of operation with space.\n"
 		<< "(combination - c, permutation - p)\n";
 
-	while (cin >> a >> b >> operation) {
+	if (!(cin >> a >> b >> operation)) error("Bad input instruction");
 
-		int p = permutation(a, b, operation);
+	int p = permutation(a, b, operation);
 
-		if (operation == 'p')
-			cout << a << "! " << "/" << " (" << a << "-" << b << ")! = " << p << endl;
-		else cout << p << " / " << b << "! = " << combination(a, b, p) << endl;
-	}
+	if (operation == 'p')
+		cout << a << "! " << "/" << " (" << a << "-" << b << ")! = " << p << endl;
+	else cout << p << " / " << b << "! = " << combination(a, b, p) << endl;
+
 	keep_window_open();
 }
 
