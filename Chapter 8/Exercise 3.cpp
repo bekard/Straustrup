@@ -1,12 +1,6 @@
 #define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS
 #include "std_lib_facilities.h"
 
-/*
-напишите функцию print , которая выводит в поток cout вектор целых чисел.
-передавайте ей два аргумента: строку для "метки" результатов и объект
-класса vector.
-*/
-
 void print(const vector<int>& v, const string& name) {
 	for (int a = 0; a < v.size(); ++a) {
 		cout << name << "(" << a+1 << "): " << v[a] << '\n';
