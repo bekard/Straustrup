@@ -21,7 +21,7 @@ namespace Library {
 
 	class Book {
 	public:
-		Book(string ibsn, string name, string author, Date d, bool in_library);
+		Book(fill_ibsn(), string name, string author, Date d, bool in_library);
 		Book();
 		void add_book();
 		string fill_ibsn();
