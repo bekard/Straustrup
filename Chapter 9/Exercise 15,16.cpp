@@ -167,9 +167,7 @@ void test()
 int main()
 try
 {
-	Money a, b;
-	cin >> a >> b;
-	cout << a << " + " << b << " = " << a + b << endl;
+	test();
 	keep_window_open();
 }
 
