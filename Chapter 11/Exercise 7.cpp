@@ -92,7 +92,7 @@ void change_file()
 	std::fstream fs{ fname };
 	if (!fs) std::cerr << "can't open the file ", fname;
 
-	for (std::string s; std::getline(fs; s);)
+	for (std::string s; std::getline(fs, s);)
 		delete_wspace_hyphen(s);
 }
 
