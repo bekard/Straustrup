@@ -1,2 +1,2 @@
 # Stroustrup
-Exercises from book
+Exercises from the book
